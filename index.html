@@ -27,7 +27,7 @@
                     <div @click="prevSlide" class="prev"></div>
                     <div @click="nextSlide" class="next"></div>
                     <div class="thumb">
-                        <img v-for="(image, i) in movies.images"  :src="image" alt="">
+                        <img :class=" current === i ? 'active' : 'dark' " v-for="(image, i) in movies.images"  :src="image" alt="">
                     </div>
                     <!-- /.thumb -->
                 </div>

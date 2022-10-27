@@ -42,7 +42,6 @@
 .thumb {
     height: calc((300px) / 5.3);
     width: 200px;
-    opacity: 0.5;
 }
 
 .thumb img {
@@ -51,9 +50,12 @@
     object-fit: cover;
 }
 
-.thumb.active {
-    border: 2px solid #ccc;
+.active {
     opacity: 1;
+}
+
+.dark {
+    opacity: 0.5;
 }
 
 .prev, .next {
