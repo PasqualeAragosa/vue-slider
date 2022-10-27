@@ -40,7 +40,8 @@
 }
 
 .thumb {
-    height: calc((300px) / 5);
+    height: calc((300px) / 5.3);
+    width: 200px;
     opacity: 0.5;
 }
 

@@ -29,7 +29,11 @@
                 <div class="thumbs">
                     <div class="prev"></div>
                     <div class="next"></div>
-                    <div class="thumb active">
+                    <div class="thumb">
+                        <img v-for="image in movies.images"  :src="image" alt="">
+                    </div>
+                    <!-- /.thumb -->
+                    <!-- <div class="thumb active">
                         <img src="img/01.webp" alt="Spiderman" />
                     </div>
                     <div class="thumb">
@@ -43,7 +47,7 @@
                     </div>
                     <div class="thumb">
                         <img src="img/05.webp" alt="Avengers" />
-                    </div>
+                    </div> -->
                 </div>
                 <!-- /.thumbs -->
             </div>
@@ -54,6 +58,7 @@
     <!-- /#app -->
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./js/script.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
