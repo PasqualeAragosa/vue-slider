@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slider</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                     <div @click="prevSlide" class="prev"></div>
                     <div @click="nextSlide" class="next"></div>
                     <div class="thumb">
-                        <img :class=" current === i ? 'active' : 'dark' " v-for="(image, i) in movies.images"  :src="image" alt="">
+                        <img :class=" current === index ? 'active' : 'dark' " v-for="(image, index) in movies.images" @click="selectSlide(index)" :src="image" alt="">
                     </div>
                     <!-- /.thumb -->
                 </div>
@@ -39,8 +39,8 @@
     </div>
     <!-- /#app -->
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
